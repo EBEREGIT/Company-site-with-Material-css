@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <title>materialize CSS Design</title>
   <!-- stylings go here -->
   <style>
@@ -47,24 +49,42 @@
         </a>
 
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li>
+            <a href="" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Instaagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Linkedin">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+            
         </ul>
 
         <ul class="sidenav grey lighten" id="mobile-menu">
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <!-- photo / grid -->
-  <section class="container section" id="photo's">
+  <section class="container section" id="gallery">
     <!-- Portrait -->
     <div class="row">
       <div class="col s12 l4">
@@ -210,7 +230,7 @@
   </section>
 
   <!-- footer -->
-  <footer class="page-footer grey darken-3">
+  <footer class="page-footer grey darken-3" id="about">
     <div class="container">
       <div class="row">
         <div class="col s12 l6">
@@ -246,6 +266,7 @@
       $('.datepicker').datepicker({
         disableWeekends: true
       });
+      $('.tooltipped').tooltip();
     });
   </script>
 </body>
