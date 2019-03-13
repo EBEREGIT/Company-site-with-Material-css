@@ -15,7 +15,7 @@
   <!-- stylings go here -->
   <style>
     header{
-      background: url(img/man.jpg);
+      background: url(img/2019002_univ_lsr_lg.jpg);
       background-size: cover;
       background-position: center;
       min-height: 1000px;
@@ -84,7 +84,7 @@
   </header>
 
   <!-- photo / grid -->
-  <section class="container section" id="gallery">
+  <section class="container section scrollSpy" id="gallery">
     <!-- Portrait -->
     <div class="row">
       <div class="col s12 l4">
@@ -126,7 +126,7 @@
     </div>
   </div>
   <!-- services / tabs -->
-  <section class="container section" id="services">
+  <section class="container section scrollSpy" id="services">
     <div class="row">
       <div class="col s12 l4">
         <h2 class="indigo-text tex-darken-4">What I do</h2>
@@ -176,7 +176,7 @@
     </div>
 
   <!-- contact form -->
-  <section class="section container" id="contact">
+  <section class="section container scrollSpy" id="contact">
     <div class="row">
       <div class="col s12 l5">
         <h2 class="indigo-text text darken-4">Get in touch</h2>
@@ -222,7 +222,7 @@
             </p>
           </div>
           <div class="input-field">
-            <input type="submit" class="btn" value="Submit">
+            <input type="submit" class="btn indigo darken-4" value="Submit">
           </div>
         </form>
       </div>
@@ -230,7 +230,7 @@
   </section>
 
   <!-- footer -->
-  <footer class="page-footer grey darken-3" id="about">
+  <footer class="page-footer grey darken-3 scrollSpy" id="about">
     <div class="container">
       <div class="row">
         <div class="col s12 l6">
@@ -267,6 +267,7 @@
         disableWeekends: true
       });
       $('.tooltipped').tooltip();
+      $('.scrollSpy').scrollSpy();
     });
   </script>
 </body>
