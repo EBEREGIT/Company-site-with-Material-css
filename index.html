@@ -22,6 +22,12 @@
       padding-top: 4vh;
       padding-bottom: 4vw;
     }
+    .tabs .indicator{
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }
     @media screen and (max-width: 670px){
       header{
         min-height: 500px;
@@ -94,12 +100,87 @@
   </section>
 
   <!-- parallax -->
-
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/stars.jpg" alt="" class="responsive-img" />
+    </div>
+  </div>
   <!-- services / tabs -->
+  <section class="container section" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text tex-darken-4">What I do</h2>
+        <p>
+            Lorem Ipsum: usage. Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content.
+        </p>
+        <p>
+            Lorem Ipsum: usage. Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content.
+        </p>
+      </div>
+      <div class="col s12 l6 offset-12">
+        <ui class="tabs">
+            <li class="tab col s6">
+                <a href="#photography" class="indigo-text text-darken-4">Photograph</a>
+              </li>
+          <li class="tab col s6">
+            <a href="#editting" class="indigo-text text-darken-4">Editting</a>
+          </li>
+        </ui>
+        <div class="col s12" id="photography">
+          <p class="flow-text indigo-text text-darken-4">Photograph</p>
+          <p>
+              Lorem Ipsum: usage. Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content.
+          </p>
+          <p>
+              Lorem Ipsum: usage. Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content.
+          </p>
+        </div>
+        <div class="col s12" id="editting">
+            <p class="flow-text indigo-text text-darken-4">Editting</p>
+            <p>
+                Lorem Ipsum: usage. Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content.
+            </p>
+            <p>
+                Lorem Ipsum: usage. Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content.
+            </p>
+          </div>
+      </div>
+    </div>
+  </section>
 
   <!-- parallax -->
+  <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/street.jpg" alt="" class="responsive-img" />
+      </div>
+    </div>
 
   <!-- contact form -->
+  <section class="section container" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="indigo-text text darken-4">Get in touch</h2>
+        <p>
+            Lorem Ipsum: usage. Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content.
+        </p>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form action="">
+          <legend><h5 class="indigo-text text-darken-4">Please Fill Out this form</h5></legend>
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email" />
+            <label for="email">Your Email</label>
+          </div>
+          <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea name="message" id="message" cols="30" rows="10" class="materialize-textarea"></textarea>
+              <label for="message">Your Message</label>
+            </div>
+        </form>
+      </div>
+    </div>
+  </section>
 
   <!-- footer -->
 
@@ -110,6 +191,8 @@
     $(document).ready(function(){
       $('.sidenav').sidenav();
       $('.materialBoxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
     });
   </script>
 </body>
