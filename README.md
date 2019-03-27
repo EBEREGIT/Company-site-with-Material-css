@@ -13,4 +13,4 @@ A company website built on material css
 * open the <code>index.html</code> in any browser
 
 ### on the internet
-* Click [here](https://eberegit.github.io/Company-site-with-Material-css/index.htm "here") to open the page
+* Click [here](https://eberegit.github.io/Company-site-with-Material-css/index.html "here") to open the page
